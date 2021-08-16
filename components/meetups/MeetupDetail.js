@@ -14,7 +14,8 @@ export default function MeetupDetail({ title, image, address, description }) {
     <rect width="${w}" height="${h}" fill="#333" />
     <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
     <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-    </svg>`
+    </svg>
+    `
 
     const toBase64 = (str) =>
     typeof window === 'undefined'
@@ -25,7 +26,7 @@ export default function MeetupDetail({ title, image, address, description }) {
         <section className={classes.detail}>
             <Image 
                 src={image} 
-                alt=""
+                alt="some image"
                 priority
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(640, 430))}`}

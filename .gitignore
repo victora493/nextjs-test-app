@@ -5,6 +5,10 @@
 # dependencies
 /node_modules
 node_modules
+/.next
+.next
+/next
+next
 /.pnp
 .pnp.js
 
