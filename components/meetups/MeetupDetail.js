@@ -10,6 +10,8 @@ export default function MeetupDetail({ title, image, address, description }) {
                 src={image} 
                 alt=""
                 priority
+                placeholder="blur"
+                blurDataURL="https://jmperezperez.com/amp-dist/sample/sample-placeholder.png"
             />
             <h1>{title}</h1>
             <address>{address}</address>
