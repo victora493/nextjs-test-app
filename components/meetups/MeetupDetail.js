@@ -1,5 +1,6 @@
 import classes from './MeetupDetail.module.css'
 import Image from 'next/image'
+import dataURL from '../../util/placeHolderDataURL';
 
 export default function MeetupDetail({ title, image, address, description }) {
     return (
@@ -11,7 +12,7 @@ export default function MeetupDetail({ title, image, address, description }) {
                 alt=""
                 priority
                 placeholder="blur"
-                blurDataURL="https://jmperezperez.com/amp-dist/sample/sample-placeholder.png"
+                blurDataURL={dataURL}
             />
             <h1>{title}</h1>
             <address>{address}</address>

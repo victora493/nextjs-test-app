@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import dataURL from '../../util/placeHolderDataURL';
 
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
@@ -22,7 +23,7 @@ function MeetupItem(props) {
             src={props.image} 
             alt={props.title}
             placeholder="blur"
-            blurDataURL="https://jmperezperez.com/amp-dist/sample/sample-placeholder.png"
+            blurDataURL={dataURL}
           />
         </div>
         <div className={classes.content}>
