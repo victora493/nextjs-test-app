@@ -24,6 +24,7 @@ function MeetupItem(props) {
             width={640} 
             height={430}
           />
+          <img src={props.image} alt="" />
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
