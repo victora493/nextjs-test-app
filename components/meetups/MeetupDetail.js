@@ -17,11 +17,10 @@ export default function MeetupDetail({ title, image, address, description }) {
     <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
     </svg>`
 
-    const toBase64 = (str) => {
-        return typeof window === 'undefined'
-            ? Buffer.from(str).toString('base64')
-            : window.btoa(str)
-    }
+    const toBase64 = (str) =>
+    typeof window === 'undefined'
+        ? Buffer.from(str).toString('base64')
+        : window.btoa(str)
 
     return (
         <section className={classes.detail}>
