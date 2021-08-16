@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList"
+<<<<<<< HEAD
 import imageSnk from '../public/AOT_Retour_du_Bataille_d%27exploration.png'
+=======
+>>>>>>> parent of 60936af (added custom image)
 
 function HomePage({ meetups }) {
     const shimmer = (w, h) => `
@@ -33,7 +36,11 @@ function HomePage({ meetups }) {
             </Head>
 
             <Image 
+<<<<<<< HEAD
                 src={imageSnk} 
+=======
+                src={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg'} 
+>>>>>>> parent of 60936af (added custom image)
                 placeholder="blur"
                 
                 width={640} 
