@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 
     return {
         // if false tells next-js to only pre-generate the pages with the params saved and not try to generate a new page if an "unknown" param is requested
-        fallback: false,
+        fallback: 'blocking',
         paths: meetups.map(meetup => ({ params: { meetupId: meetup._id.toString() } }))
     }
 }
