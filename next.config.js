@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-        domains: ['upload.wikimedia.org', '2.bp.blogspot.com', 'i.pinimg.com'],
+        domains: ['https://firebasestorage.googleapis.com/', 'https://firebasestorage.googleapis.com/v0/b/mfa-admin.appspot.com/o/'],
     },
 }

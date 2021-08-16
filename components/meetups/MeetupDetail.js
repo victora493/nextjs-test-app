@@ -1,6 +1,5 @@
 import classes from './MeetupDetail.module.css'
 import Image from 'next/image'
-import dataURL from '../../util/placeHolderDataURL';
 
 export default function MeetupDetail({ title, image, address, description }) {
     const shimmer = (w, h) => `
