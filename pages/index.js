@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList"
+import image from '../public/AOT_Retour_du_Bataille_d%27exploration.png'
 
 function HomePage({ meetups }) {
     const shimmer = (w, h) => `
@@ -32,7 +33,7 @@ function HomePage({ meetups }) {
             </Head>
 
             <Image 
-                src={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg'} 
+                src={image} 
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(640, 430))}`}
                 width={640} 
