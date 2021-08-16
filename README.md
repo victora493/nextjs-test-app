@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Course Code & Materials
 
-## Getting Started
+This repository contains the course source code and other extra materials like slides.
 
-First, run the development server:
+## How to use
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The code snapshots are organized in multiple **branches** where every branch **represents a course section**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For example, the branch [01-getting-started](https://github.com/academind/react-complete-guide-code/tree/01-getting-started) holds all code snapshots and extra materials for section 1 of the course ("Getting Started").
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can switch branches via the branch dropdown above the directory explorer.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![Click on the branch dropdown and then select the appropriate branch for the course section you're looking for](./selecting-a-branch.jpg)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In most branches, you'll find multiple folders which organize the section-specific content further:
 
-## Learn More
+- Often, you'll find a `/code` subfolder which contains any relevent code snapshots for the given course section
+- You also often find `/slides` folders which - guess what - contain the slides for the module
+- `/extra-files` typically contains extra files like `.css` files that might be attached to individual lectures in that course module
 
-To learn more about Next.js, take a look at the following resources:
+The folder names should generally be self-explanatory but also feel free to simply click around and see which materials are available.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Using code snapshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Code snapshots (which you find in `/code`) are there for you to compare your code to mine and find + fix errors you might have in your code.
 
-## Deploy on Vercel
+You can either view my code directly here on Github (you can open + view code files without issues here) or you download the snapshots.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The subfolders in the `/code` folder are named such that mapping them to the course lectures is straightforward.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Downloading code snapshots
+
+You can download all the content of a branch via the "Code" button here on Github. You can then either [clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository or simply download the selected branch content as a ZIP file.
+
+**Important:** You always download the **entire branch content!**
+
+You can then dive into the interesting folders (e.g. the individual code snapshots) locally on your hard drive.
+
+### Running the attached code
+
+You can use the attached code simply to compare it to yours. But you can also run it.
+
+To run my code, navigate into a specific code snapshot folder via the `cd` command in your command prompt or terminal first.
+
+Then run `npm install` to install all required dependencies (this will create a `/node_modules` folder).
+
+**Important:** If you're using the code for a module that requires API keys or a backend (e.g. the module about sending Http requests), you'll have to use **your backend URLs** or API keys. Mine won't work (I disabled my projects).
