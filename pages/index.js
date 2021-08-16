@@ -52,7 +52,7 @@ export async function getStaticProps() {
             })
         },
         // pre-generates the page to be STATIC every n seconds
-        // revalidate: 10
+        revalidate: 1
     }
 }
 
